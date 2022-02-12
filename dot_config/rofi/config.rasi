@@ -1,0 +1,7 @@
+configuration {
+	modi: "drun,window,run";
+	font: "Sarasa Gothic SC 12";
+	show-icons: true;
+	icon-theme: "Qogir";
+	cycle: false;
+}
