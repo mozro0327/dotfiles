@@ -1,4 +1,14 @@
 # Read more about SSH config files: https://linux.die.net/man/5/ssh_config
+Host Keenon_Robot
+    HostName 172.16.13.14
+    Port 10028
+    User mozro
+    
+Host Keenon_Robot_Arm
+    HostName 172.16.13.14
+    User zhuorong.mo
+    Port 10029
+
 Host KeenonPC
     HostName 172.16.9.32
     User cheukwing
