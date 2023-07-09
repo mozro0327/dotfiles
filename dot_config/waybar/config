@@ -2,7 +2,7 @@
 	"layer": "top",
 	"modules-left": ["custom/launcher","cpu","memory"],
 	"modules-center": ["wlr/workspaces","tray"],
-	"modules-right": ["pulseaudio","disk","network","clock"],
+	"modules-right": ["pulseaudio","battery","clock"],
     "wlr/workspaces": {
         "format": "{icon}",
         "on-click": "activate",
@@ -16,7 +16,7 @@
 	  "7": "7",
 	  "8": "8",
 	  "9": "9",
-	  "0": "0",
+	  "10": "10",
           "urgent": " ",
           "active": " ",
           "default": " "
@@ -70,6 +70,19 @@
     "memory": {
         "interval": 30,
         "format": "{used:0.1f}G/{total:0.1f}G "
+    },
+    "battery": {
+        "bat": "BAT0",
+        "interval": 60,
+        "states": {
+                "warning": 30,
+                "critical": 15
+    	},
+        "format": "{icon}  {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+	"format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "max-length": 30
     },
     "disk": {
         "interval": 30,
